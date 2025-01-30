@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Login/Sign Up Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="stafflogin.css">
+    <script src="stafflogin.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
+
+    <script>
+        //Checking the credentials   
+        function verifyPassword() {  
+          var pw = document.getElementById("pswd").value;  
+          if(pw == "") {   
+             var error = document.getElementById("error");
+             error.textContent = "Please Fill all the Fields!"
+             error.style.color = "red"
+             document.getElementById("message").innerHTML = "**Fill the password please!"; 
+          }  
+          if(pw == "HMenon@5") { 
+            //window.navigate("StaffPage.html");
+
+          } else{
+             var error = document.getElementById("error");
+             error.textContent = "Invalid Username and Password!"
+             error.style.color = "red"
+            document.getElementById("message").innerHTML = "Invalid Username and Password!";  
+          }
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <div class="bg-image"></div>
+    <div class="container">
+        <form class="form" id="login" onsubmit ="return verifyPassword()">
+            <h1 class="form__title">STAFF LOGIN</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input id="pswd" type="password" class="form__input" autofocus placeholder="Enter the Admin PIN">
+            </div>
+            <span id="error"></span>
+            <button class="form__button" type="submit">VERIFY</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your PIN?</a><br><br>
+                <a href="Home.html" class="form__link"><b> Back Home </b></a>
+        </form>
+    </div>
+</body>
+</html>

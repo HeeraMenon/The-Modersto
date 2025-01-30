@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Reviews</title>
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <script  type="text/javascript">
+    var json = [{
+           	"name": "anand",
+           	"mailid": "anand@ic.com",
+           	"level": "75%",
+           	"chart": "trust level1",
+           	"comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu sapien sollicitudin, eleifend justo eu, cursus felis. Vivamus sem turpis, ornare id mattis ut, pellentesque ut lorem. Nam ultricies leo ante, at ullamcorper eros vehicula in. Sed iaculis semper consequat. Maecenas porttitor sagittis orci, vel fringilla ex consequat vel. In condimentum elementum mi, at euismod mauris molestie vel. Aenean sit amet sagittis tortor. Donec ipsum libero, maximus in diam id, porttitor semper risus.",
+           	"image": "images/ratings_reviews_img/person2.jpeg"
+           },
+           {
+           	"name": "heera",
+           	"mailid": "heera@ic.com",
+           	"level": "95%",
+           	 "chart": "trust level2",
+           	"comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu sapien sollicitudin, eleifend justo eu, cursus felis. Vivamus sem turpis, ornare id mattis ut, pellentesque ut lorem. Nam ultricies leo ante, at ullamcorper eros vehicula in. Sed iaculis semper consequat. Maecenas porttitor sagittis orci, vel fringilla ex consequat vel. In condimentum elementum mi, at euismod mauris molestie vel. Aenean sit amet sagittis tortor. Donec ipsum libero, maximus in diam id, porttitor semper risus.",
+           	"image": "images/ratings_reviews_img/person1.jpeg"
+           },
+           {
+           	"name": "haritha",
+           	"mailid": "haritha@ic.com",
+           	"level": "55%",
+           	"chart": "trust level3",
+           	"comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu sapien sollicitudin, eleifend justo eu, cursus felis. Vivamus sem turpis, ornare id mattis ut, pellentesque ut lorem. Nam ultricies leo ante, at ullamcorper eros vehicula in. Sed iaculis semper consequat. Maecenas porttitor sagittis orci, vel fringilla ex consequat vel. In condimentum elementum mi, at euismod mauris molestie vel. Aenean sit amet sagittis tortor. Donec ipsum libero, maximus in diam id, porttitor semper risus.",
+           	"image": "images/ratings_reviews_img/person1.jpeg"
+           },
+           {
+           	"name": "aparna",
+           	"mailid": "aparna@ic.com",
+           	"level": "25%",
+           	"chart": "trust level4",
+           	"comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu sapien sollicitudin, eleifend justo eu, cursus felis. Vivamus sem turpis, ornare id mattis ut, pellentesque ut lorem. Nam ultricies leo ante, at ullamcorper eros vehicula in. Sed iaculis semper consequat. Maecenas porttitor sagittis orci, vel fringilla ex consequat vel. In condimentum elementum mi, at euismod mauris molestie vel. Aenean sit amet sagittis tortor. Donec ipsum libero, maximus in diam id, porttitor semper risus.",
+           	"image": "images/ratings_reviews_img/person1.jpeg"
+           },
+           {
+           	"name": "hari",
+           	"mailid": "hari@ic.com",
+           	"level": "65%",
+           	"chart": "trust level1",
+           	"comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu sapien sollicitudin, eleifend justo eu, cursus felis. Vivamus sem turpis, ornare id mattis ut, pellentesque ut lorem. Nam ultricies leo ante, at ullamcorper eros vehicula in. Sed iaculis semper consequat. Maecenas porttitor sagittis orci, vel fringilla ex consequat vel. In condimentum elementum mi, at euismod mauris molestie vel. Aenean sit amet sagittis tortor. Donec ipsum libero, maximus in diam id, porttitor semper risus.",
+           	"image": "images/ratings_reviews_img/person2.jpeg"
+           },
+           ];
+
+
+
+function updateTable()
+{
+var tableHTML ="	<div class=\"testimonial-heading\"><span>REVIEWS</span><h1> FROM OUR CLIENTS</h1></div>";
+  tableHTML += "<div class=\"testimonial-box-container\">";
+  for (var c in json) {
+    tableHTML += "<div class=\"testimonial-box\">";
+     tableHTML +=  "<div class=\"box-top\">";
+      tableHTML +=   "<div class=\"profile\">";
+       tableHTML +=    "<div class=\"profile-img\">";
+         tableHTML +=    "<img src="+json[c].image+">";
+         tableHTML +=  "</div>";
+         tableHTML +=  "<div class=\"name-user\">";
+         tableHTML +=    "<strong>"+json[c].name+ "</strong>";
+         tableHTML +=    "<span>"+ json[c].mailid +"</span>";
+       tableHTML +=    "</div>";
+       tableHTML +=  "</div>";
+       tableHTML +=  "<div class=\"reviews\">";
+        tableHTML +=   "<div class=\"container\">";
+         tableHTML +=    "<p>TRUST LEVEL</p>";
+         tableHTML += "<div class=\""+ json[c].chart + "\">" +json[c].level+ "</div>";
+         tableHTML +=  "</div>";
+       tableHTML +=  "</div>";
+     tableHTML += "</div>";
+      tableHTML += "<div class=\"client-comment\">";
+      tableHTML +=   "<p>" +json[c].comments+ "</p>";
+     tableHTML +=  "</div>";
+    tableHTML += "</div>";
+  }
+  tableHTML+="</div> <a href=\"Home.html\" class=\"btn btn2\"> Return to Home</a><br> <br>";
+
+  document.getElementById("testimonials").innerHTML = tableHTML;
+}
+</script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="ratings_reviews.css" rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+    <script src="ratings_reviews.js"></script>
+</head>
+<body onload="updateTable()">
+<section id="testimonials">
+</section>
+
+<header>
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Home.html">Home</a>
+      <a href="Our_Story.html">Our Story</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="Rooms.html">Rooms</a>
+      <a href="Offers.html">Offers</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Ratings_Reviews.html">Ratings & Reviews</a>
+      <a href="Location_Enquiry.html">Location & Enquiry</a>
+  </div>
+  <span href="javascript:void(0)" style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu_icon_align">
+      &#9776; 
+  </span>
+</header>
+</body>
+</html>

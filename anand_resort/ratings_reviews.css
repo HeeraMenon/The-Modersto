@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Lucida+Sans:300,400);s
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Josefin Sans';
+	box-sizing: border-box;
+}
+a
+{
+	text-decoration: none;
+}
+.heading
+{
+    height: 100vh;
+}
+.row
+{
+    max-width: 1180px;
+    margin: 0 auto 1px;
+    font-size: 1em;
+}
+.logo
+{
+    height: 85px;
+    width: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+.main-nav
+{
+    float: right;
+    margin-top: 50px;
+}
+.main-nav li
+{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a
+{
+    padding: 5px 0;
+    color: rgb(0, 49, 13);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200px;
+    font-size: 85%;
+}
+
+
+
+#testimonials
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.testimonial-heading
+{
+	letter-spacing: 1px;
+	margin: 30px 0px;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.testimonial-heading h1
+{
+	font-size: 2.2rem;
+	font-weight: 500;
+	background-color: #00310d;
+	color: #ffffff;
+	padding: 10px 20px;
+}
+.testimonial-heading span
+{
+	font-size: 1.3rem;
+	color: #252525;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.testimonial-box-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+.testimonial-box
+{
+	width: 500px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+}
+.testimonial-box:hover
+{
+	transform: translateY(-10px);
+	transition: all ease 0.3s;
+}
+.profile-img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.profile-img img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.profile
+{
+	display: flex;
+	align-items: center;
+
+}
+.name-user
+{
+	display: flex;
+	flex-direction: column;
+}
+.name-user strong
+{
+	color: #3d3d3d;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;	
+}
+.name-user span
+{
+	color: #979797;
+	font-size: 0.8rem;
+
+}
+.reviews
+{
+	color: #00310d;
+	width: 100%;
+}
+.box-top
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+
+}
+.container 
+{
+	background-color: rgb(192, 192, 192);
+	padding: 10px 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+.trust 
+{
+     background-color: #05814753;
+     color: white;
+     padding: 1%;
+     text-align: right;
+     font-size: 20px;
+     border-radius: 15px;
+}
+.level1 
+{
+     width: 70%;
+}
+.level2
+{
+	width: 90%;
+}
+.level3
+{
+	width: 40%;
+}
+.level4
+{
+	width: 30%;
+}
+.client-comment p
+{
+	font-size: 0.9rem;
+	color: #4b4b4b;
+
+}
+.btn
+{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1.5px solid #00310d;
+}
+.btn2:hover
+{
+    background: #05814753;
+    transition: .5s;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* NAVINGATION MENU */
+header .sidenav 
+{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #00310d;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+header .sidenav a 
+{
+    padding: 10px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Josefin Sans', cursive;
+    text-align: center;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+header .menu_icon_align
+{
+    position: absolute;
+    font-family: 'Josefin Sans', cursive;
+    color: #00310d;
+    top: 30px;
+    left: 40px;
+}
+header .sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+header .sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

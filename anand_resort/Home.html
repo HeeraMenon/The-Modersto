@@ -1,0 +1,220 @@
+<html>
+<head>
+    <title> Modersto-HOME
+    </title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lucida+Sans" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Home.html">Home</a>
+        <a href="Our_Story.html">Our Story</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Rooms.html">Rooms</a>
+        <a href="Offers.html">Offers</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Ratings_Reviews.html">Ratings & Reviews</a>
+        <a href="Location_Enquiry.html">Location & Enquiry</a>
+    </div>
+    <span href="javascript:void(0)" style="font-size:30px;cursor:pointer" onclick="openNav()" class="menu_icon_align">
+            &#9776; 
+        </span>
+
+    <!--Head-->
+    <div class="header-content">
+        <div class="center_head">
+            <h1 class="h1">THE MODERSTO</h1>
+            <h4 class="h4">Resorts & Spa</h4>
+        </div>
+        <div class="book_btn_div">
+            <b><a href="Book.html" class="btn book_btn"> BOOK NOW </a></b>
+            <b><a href="WebCheckin.html" class="btn book_btn"> WEB CHECK-IN </a></b>
+            <b><a href="StaffLogin.html" class="btn book_btn"> STAFF LOGIN </a></b>
+        </div>
+        <h2 class="h2">
+            Paradise Awaits in Maldives!<br> Lhaviyani Atoll
+            Thilamaafushi Island <br> Maldives
+        </h2>
+    </div>
+</header>
+
+
+<!--REDIRECT TO Offers PAGE-->
+<div class="offer_part1"><br></div>
+<div class="offer_part1">
+    <div class="offer_img_part1">
+        <img src="images/home/offer_img_part1.jpg">
+    </div>
+    <div class="offer_part1_text">
+        <br>
+        <p>
+            <b> <i>OUR OFFERS ARE UP...</i></b>
+        </p>
+        <h3>SAVE UPTO 30% USING DIRECT BOOKING</h3>
+        <p> We can't wait for your return to the Modersto!</p>
+        <p> Now you can take up any suite with our jaccuzi and gaming <br>packed in limited offers. This
+            weekend comes with amazing packages joining these three provisions together.</p>
+        <p> What are you waiting for! Check it out now!</p>
+        <button onclick="RedirectToOffers()" class="redirect_icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </button>    
+    </div>
+</div>
+<div class="offer_part1"><br><br></div>
+
+
+
+<!--REDIRECT TO Rooms PAGE-->
+<div class="offer_part1">
+    <div class="offer_part2_text">
+        <br>
+        <p>
+            <b> <i>CHECK-IN TO TUNE OUT</i></b>
+        </p>
+        <h3>SLEEP & WELLBEING</h3>
+        <p>
+            At Modersto we value your sleep just as much as you do.<br><br>We want to offer you the most relaxing
+            oasis in the heart <br>of Maldives. Our rooms are soundproof, and we only use <br>the highest 
+            quality materials. We also make sure there are <br>no distractions in the rooms, such as TV 
+            and electronics, <br>to improve your sleep quality. We strive to reduce waste, <br>so we don't 
+            keep plastic bottles and glasses in our room. <br>However you can find a fully stocked vending 
+            machine in <br>the lounge. Hairdryers, irons and ironing boards are <br>available from reception 
+            (subject to availability and holding <br>deposit)
+        </p>
+        <button onclick="RedirectToRooms()" class="redirect_icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </button>
+    </div>
+    <div class="offer_img_part2">
+        <img src="images/home/room_img_part2.jpg">
+    </div>
+</div>
+<div class="offer_part1"><br><br></div>
+
+
+
+<!--REDIRECT TO Location & Enquiry PAGE-->
+<div class="offer_part1">
+    <div class="locEn_img_part3">
+        <img src="images/home/locEn_img_part3.png">
+    </div>
+    <div class="offer_part1_text">
+        <br>
+        <p>
+            <b> <i>LOCATION</i></b>
+        </p>
+        <h3>WHERE YOU"LL FIND US</h3>
+        <p>
+            We don't want to keep shouting how central we actually are. <br>We will only say that it is 
+            set on the shores of the Laccadive Sea. <br>So catch this posh resort is a minute's
+            walk from shops and <br>restaurants at The Marina at Crossroad Maldives, and 10 km by 
+            boat from Velana International Airport.
+        </p>
+        <button onclick="RedirectToLocationEnqiry()" class="redirect_icon">
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </button>
+    </div>
+</div> 
+<div class="offer_part1"><br><br></div>
+
+
+
+    <!--Explore Picture PAGE-->
+    <div class="explore_page_part4_heading">
+        <br><h3>EXPLORE MALDIVES</h3><br>
+    </div>
+    <div class="explore_page_part4">
+            <div class="gallery">
+                <a target="_blank" href="images/home/laccadive_sea.jpg">
+                  <img src="images/home/laccadive_sea.jpg" width="600" height="400">
+                </a>
+                <div class="desc">The Laccadive Sea</div>
+            </div>
+              
+            <div class="gallery">
+                <a target="_blank" href="images/home/male_city.png">
+                  <img src="images/home/male_city.png" width="600" height="400">
+                </a>
+                <div class="desc">Male City</div>
+            </div>
+              
+            <div class="gallery">
+                <a target="_blank" href="images/home/banana_reef.png">
+                  <img src="images/home/banana_reef.png" width="600" height="400">
+                </a>
+                <div class="desc"> Banana Reef</div>
+            </div>
+              
+            <div class="gallery">
+                <a target="_blank" href="images/home/ithaa_undersea_restaurant.jpg">
+                  <img src="images/home/ithaa_undersea_restaurant.jpg" width="600" height="400">
+                </a>
+                <div class="desc">Ithaa Undersea Restaurant</div>
+            </div>
+    </div>
+    <div class="explore_page_part4_heading"><br><br></div>
+
+
+
+
+
+    <!--REDIRECT TO Blog PAGE-->
+    <div class="blog_part5_heading">
+        <h3>BLOG</h3>
+    </div>
+    <center>
+    <div class="blog_part5_p">
+        <p><b>
+            Hello and welcome to the Maldives Modersto blog!<br> We are excited to share our 
+            insights and musings on all things travel, health and wellness when you come to Maldives.<br> 
+            Our aim is to provide an inspiring and informative resource for those seeking inspiration 
+            for their next adventure.
+        </b></p>
+    </div>
+    </center>
+    <div class="blog_part5">
+        <br>
+            <div class="gallery_b">
+                <a target="_blank" href="images/home/home_blog1.png">
+                  <img src="images/home/home_blog1.png" width="600" height="400">
+                </a>
+                <div class="desc_b">Where to stay in Maldives for Nightlife</div>
+            </div>
+              
+            <div class="gallery_b">
+                <a target="_blank" href="images/home/home_blog2.png">
+                  <img src="images/home/home_blog2.png" width="600" height="400">
+                </a>
+                <div class="desc_b">Hotels near the Atoll</div>
+            </div>
+              
+            <div class="gallery_b">
+                <a target="_blank" href="images/home/home_blog3.png">
+                  <img src="images/home/home_blog3.png" width="600" height="400">
+                </a>
+                <div class="desc_b"> The Island Atoll outside Entrance</div>
+            </div>
+              
+            <div class="gallery_b">
+                <a target="_blank" href="images/home/home_blog4.png">
+                  <img src="images/home/home_blog4.png" width="600" height="400">
+                </a>
+                <div class="desc_b">What Hotels do Celebs stay in?</div>
+            </div>
+    </div>
+    <div class="blog_part5_heading_button">
+        <a href="Blog.html" class="btn_blog btn1_blog"><b> Read More </b></a>
+    <br><br></div>
+
+
+    <section class="footer">
+        <p>321 Fifth Avenue, Lhaviyani Atoll Thilamaafushi Islands, 07040 Maldives | Phone: 800-123-456 | Email: modersto.maldives@gmail.com </p>
+        <p>Copyright @ 2020 Resort Facilities</p>
+    </section>
+</body>
+</html>

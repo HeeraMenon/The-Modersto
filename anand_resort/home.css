@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css?family=Lucida+Sans');
+
+html,body
+{
+    height: 100%;
+    overflow-x: hidden;
+    overflow: inherit;
+    width: 100%;
+
+}
+/*CONTENT OF OPENING PAGE*/
+header
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/home/home_img1.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.center_head
+{
+    position: absolute;
+    text-align: center;
+    line-height: 0.5;
+    color:  #00310d;
+    font-family: 'Lucida Sans';
+    top: 30px;
+    left: 40%;
+} 
+/*
+    -webkit-text-stroke-width: 0.1px;    //to text border with colour
+    -webkit-text-stroke-color: white;
+*/
+/*color:  #a4d2b1;
+          #d6e9dc
+          #00310d
+*/
+.h2
+{
+    position: absolute;
+    text-align: center;
+    color:  #00310d;
+    font-family: 'Lucida Sans';
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-content .btn
+{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1.5px solid #00310d;
+}
+.header-content .book_btn
+{
+    background: rgba(255, 255, 255, 0.466);
+    color: #00310d;
+    border: 1.5px solid #00310d;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.header-content .book_btn:hover
+{
+    background: #05814753;
+    transition: .5s;
+}
+.book_btn_div
+{
+    position: absolute;
+    text-align: right;
+    font-family: 'Lucida Sans', cursive;
+    top: 30px;
+    right: 15px;
+}
+
+
+
+
+  
+
+
+
+/* NAVINGATION MENU */
+header .sidenav 
+{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #00310d;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+header .sidenav a 
+{
+    padding: 10px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Josefin Sans', cursive;
+    text-align: center;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+header .menu_icon_align
+{
+    position: absolute;
+    font-family: 'Josefin Sans', cursive;
+    color: #00310d;
+    top: 30px;
+    left: 40px;
+}
+header .sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+header .sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+  
+
+
+
+
+/* THE OFFERS REDIRECT PART1 */
+.offer_part1 
+{
+    font-family: 'Lucida Sans';
+    background-color: #00310d;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.offer_part2
+{
+    font-family: 'Lucida Sans';
+    background-color: #00310d;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.offer_img_part1 img
+{
+    max-width: 130%;
+    float: left;
+    margin-left: 50%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.offer_img_part2 img
+{
+    max-width: 90%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.offer_img_part1
+{
+    flex-basis: 40%;
+}
+
+
+.offer_img_part2
+{
+    flex-basis: 40%;
+}
+
+
+.offer_part1_text 
+{
+    font-size: 17px;
+    padding-left: 30%;
+}
+
+.offer_part2_text
+{
+    font-size: 17px;
+    padding-left: 10%;
+}
+
+.offer_part2_text h3
+{
+    color: #a4d2b1;
+    text-shadow: 2px 2px #3d5042;
+}
+
+.offer_part2_text p
+{
+    color: #f1f1f1;
+}
+
+.offer_part1_text h3
+{
+    color: #a4d2b1;
+    text-shadow: 2px 2px #3d5042;
+}
+.offer_part1_text p
+{
+    color: #f1f1f1;
+}
+
+.redirect_icon ion-icon
+{
+    background-color: #00310d;
+    min-width: 30px;
+    height: 30px;
+    
+}
+ion-icon 
+{
+    color: #00310d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THE ROOMS REDIRECT PART2 */
+.room_part2 
+{
+    font-family: 'Lucida Sans';
+    background-color: #00310d;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.room_img_part2 img
+{
+    max-width: 120%;
+    float: left;
+    margin-left: 60%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.room_img_part2 
+{
+    flex-basis: 40%;
+}
+.room_part2_text 
+{
+    font-size: 17px;
+    padding-left: 30%;
+}
+.room_part2_text h3
+{
+    color: #a4d2b1;
+    text-shadow: 2px 2px #3d5042;
+}
+.room_part2_text p
+{
+    color: #f1f1f1;
+}
+.redirect_icon ion-icon
+{
+    background-color: #f1f1f1b0;
+    min-width: 30px;
+    height: 30px;
+}
+ion-icon 
+{
+    color: #00310d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THE Loc & Enquiry  REDIRECT PART3 */
+.locEn_part3 
+{
+    font-family: 'Lucida Sans';
+    background-color: #00310d;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.locEn_img_part3 img
+{
+    max-width: 120%;
+    float: left;
+    margin-left: 40%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.locEn_img_part3 
+{
+    flex-basis: 40%;
+}
+.locEn_part3_text 
+{
+    font-size: 17px;
+    padding-left: 30%;
+}
+.locEn_part3_text h3
+{
+    color: #a4d2b1;
+    text-shadow: 2px 2px #3d5042;
+}
+.locEn_part3_text p
+{
+    color: #f1f1f1;
+}
+.redirect_icon ion-icon
+{
+    background-color: #f1f1f1b0;
+    min-width: 30px;
+    height: 30px;
+}
+ion-icon 
+{
+    color: #00310d;
+}
+
+
+
+
+
+
+
+
+
+
+/*THE EXPLORE PICTURES PAGE*/
+.explore_page_part4
+{
+    font-family: 'Lucida Sans';
+    background-color: #a4d2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.explore_page_part4_heading
+{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    color: #00310d;
+    text-shadow: 2px 2px #5a7662;
+    background-color: #a4d2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.gallery 
+{
+    margin: 5px;
+    align-items: center;
+    border: 3px solid #ccc;
+    float: left;
+    width: 250px;
+}
+.gallery:hover 
+{
+    border: 3px solid #00310d;
+}
+  
+.gallery img 
+{
+    width: 250px;
+    height: 150px;
+}
+  
+.desc 
+{
+    padding: 15px;
+    text-align: center;
+    text-decoration: solid;
+}
+
+
+
+
+
+
+
+
+
+/*THE HOME BLOG REDIRECT PAGE*/
+.blog_part5
+{
+    font-family: 'Lucida Sans';
+    background-color: #a4d2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.blog_part5_heading
+{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    color: #00310d;
+    text-shadow: 2px 2px #5a7662;
+    background-color: #a4d2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.blog_part5_heading_button
+{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    color: #00310d;
+    background-color: #a4d2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.blog_part5_p 
+{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    opacity: 0.8;
+    color: #00310d;
+    background-color: #a4d2b1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.gallery_b 
+{
+    margin: 5px;
+    align-items: center;
+    
+    float: left;
+    width: 200px;
+} 
+.gallery_b img 
+{
+    width: 200px;
+    height: 200px;
+}
+  
+.desc_b 
+{
+    padding: 15px;
+    text-align: center;
+    text-decoration: solid;
+}
+.btn_blog
+{
+    font-size: 18px;
+    color: #00310d;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1.5px solid #00310d;
+}
+.btn1_blog:hover
+{
+    background: #05814753;
+    transition: .5s;
+}
+
+
+
+
+
+/*FOOTER*/
+.footer
+{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #00310d;
+    text-align: center;
+}
+
+.footer p
+{
+    color:#b3e4c1;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+

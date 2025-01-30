@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+
+var dataPoints = [];
+
+$(document).ready(function(){
+    var SendInfo = {"days" : 60, "keyword" : "ROOM"}
+    $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8080/getReport',
+            headers : {'Content-Type' : 'application/json'
+                     },
+            data: JSON.stringify(SendInfo),
+            traditional: true,
+            success: function (data) {
+                alert(JSON.stringify(data));
+                $.each(data.reviewReports, function (i, obj) {
+                    dataPoints.push({
+		x:  new Date(obj.date),
+		y: obj.rating
+	    });
+    });
+        var limit = 10000;    //increase number of dataPoints by increasing the limit
+var y = 100;    
+var data = [];
+var dataSeries = { type: "line" };
+
+
+
+alert(JSON.stringify(dataPoints));
+dataSeries.dataPoints = dataPoints;
+data.push(dataSeries);
+
+
+//Better to construct options first and then pass it as a parameter
+var options = {
+	zoomEnabled: true,
+	animationEnabled: true,
+    axisX: {
+		valueFormatString: "DD MMM YYYY",
+	},
+	title: {
+		text: "Rating on Room "
+	},
+	data: data  // random data
+};
+
+$("#chartContainer").CanvasJSChart(options);
+
+
+            }
+        });
+
+    });
+
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+</html>

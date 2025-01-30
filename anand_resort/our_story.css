@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Lucida+Sans');
+
+/* ALL */
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+ 
+
+
+/* BACKGROUND & CONTENT OF THE PAGE */
+.heading
+{
+    height: 160vh;
+}
+.video-background
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 125%;
+    height: 150%;
+    z-index: -1;
+}
+.row
+{
+    max-width: 1180px;
+    margin: 0 auto 1px;
+    font-size: 1em;
+}
+body{
+    font-family: 'Josefin Sans';
+    font-size: 85%;
+    background-size: cover;
+    background-attachment :fixed;
+}
+.logo
+{
+    height: 85px;
+    width: auto;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: 30px 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.main-nav
+{
+    float: right;
+    margin-top: 50px;
+}
+.main-nav li
+{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a
+{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200px;
+    font-size: 90%;
+}
+.main-nav li a:hover
+{
+    border-bottom: 5px solid #bf55ec;
+}
+.welcome-msg
+{
+    position: relative;
+    text-align: center;
+    font-family: 'Lucida Sans', cursive;
+    color: #000;
+    top: 30%;
+    background-color: #ffffffcc;
+    border: 2px solid black;
+    margin: 10px;
+    opacity: 1s;
+}
+.welcome-msg h1
+{
+    font-size: 1.9em;
+    color: #00310d;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.welcome-msg p
+{
+    font-size: 1.0em;
+    font-weight: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin: 30px;
+}
+.btn
+{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1.5px solid #00310d;
+}
+.btn2:hover
+{
+    background: #05814753;
+    transition: .5s;
+}
+.btn1
+{
+    background: #05814753;
+}
+
+ 
+
+ 
+
+/* NAVINGATION MENU */
+header .sidenav 
+{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #00310d;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+header .sidenav a 
+{
+    padding: 10px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Josefin Sans', cursive;
+    text-align: center;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+header .menu_icon_align
+{
+    position: absolute;
+    font-family: 'Josefin Sans', cursive;
+    color: #00310d;
+    top: 30px;
+    left: 40px;
+}
+header .sidenav a:hover 
+{
+    color: #f1f1f1;
+}
+header .sidenav .closebtn 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) 
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

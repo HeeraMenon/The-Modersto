@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>WebCheckin Login</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="webCheckin.css">
+    <script src="webCheckin.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
+
+    <script>
+        // a random booking id has been generated after the customer books with "book now" button
+        // that id should be entered in this html page 
+        // success? redirect to next page 
+        // failure? message is shown... this part is completed here, just sucess is to be done!
+    </script>
+</head>
+
+
+
+<body>
+    <div class="bg-image"></div>
+    <div class="container">
+        <form class="form" id="login" onsubmit ="return verifyPassword()">
+            <h1 class="form__title">WEB CHECKIN</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input id="pswd" type="password" class="form__input" autofocus placeholder="Enter your Booking ID">
+            </div>
+            <span id="error"></span>
+            <button class="form__button" type="submit">ENTER</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your ID?</a><br><br>
+                <a href="Home.html" class="form__link"><b> Back Home </b></a>
+        </form>
+    </div>
+</body>
+</html>

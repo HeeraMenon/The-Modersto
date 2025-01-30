@@ -1,0 +1,112 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+
+    background-image: url("images/book_img/availability_bg.jpg");
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.457);
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    color: azure;
+    font-family: 'Lucida Sans';
+    padding-bottom: 10px;
+    font-size: 1.0em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    font-family: 'Lucida Sans';
+    width: 100%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+
+  /*
+
+  button 
+  {
+    height: 50px;
+    background: #7bc5e6;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    font-family: 'Lucida Sans';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+  }
+*/
+
+
+  .home_btn_heading
+{
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+    color: #00310d;
+    /*background-color: #a4d2b1;*/
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.btn1
+{
+    font-size: 18px;
+    color: #00310d;
+    background-color: azure;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1.5px solid #00310d;
+}
+.btn2:hover
+{
+    background: #05814753;
+    transition: .5s;
+}
+button
+{
+    font-size: 18px;
+    color: #00310d;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1.5px solid #00310d;
+    font-family: 'Lucida Sans'
+}
+button:hover 
+{
+    background: #05814753;
+    transition: .5s;
+}
