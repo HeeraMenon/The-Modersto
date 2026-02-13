@@ -1,4 +1,4 @@
-# the-modersto
+# THE MODERSTO 
 𝘼𝙗𝙤𝙪𝙩 𝙈𝙤𝙙𝙚𝙧𝙨𝙩𝙤 </br>
 ➙ A fully-flexible webpage using AJAX and JSON that manages resort database and exercises exclusive controls for admin to book/vacate/hold/cancel reservation, aids a customer for booking/checkin and for reviewing the performance and generate graphs. </br>
 ➙ Synchronized Visual Studio Code, IntelliJ and Dbeaver to facilitate management of the customer records and reception activities.  </br>
